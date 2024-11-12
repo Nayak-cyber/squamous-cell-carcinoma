@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCC Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Navbar</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!--Navbar-->
+    <!--Banner-->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center p-4 border rounded shadow bg-light">
+          <h2 class="mb-3 text-primary">Cow Disease Prediction</h2>
+          <p class="text-muted">Upload an image of your cow, and we’ll help you diagnose any visible health issues using our AI-powered system.</p>
+          
+          <!-- File Upload Input -->
+          <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+              <input type="file" class="form-control" name="image" accept="image/*" required>
+            </div>
+            <!-- Upload Button -->
+            <button type="submit" class="btn btn-primary mt-2">Upload Image</button>
+          </form>
+          
+          <!-- Redirect/Output Area -->
+          <p class="mt-4">After upload, view the predictions and suggested remedies!</p>
+        </div>
+      </div>
+    </div>
+    
+    <!--Banner-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
